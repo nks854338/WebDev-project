@@ -1,2 +1,2 @@
 # WebDev-project
-This is my first Git Repository
+This project is about web development learning website.
