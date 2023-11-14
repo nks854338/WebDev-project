@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+  <link rel="stylesheet" href="mars.css">
+  <style>
+    body {
+      margin: 30px;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: rgb(12, 134, 139);
+      text-align: center;
+      text-shadow: 4px 1.7px black;
+    }
+
+    ul {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    li {
+      margin: 20px;
+    }
+
+    * {
+      font-family: verdana;
+    }
+
+    *::selection {
+      background-color: black;
+      color: aliceblue;
+    }
+
+    pre {
+      margin: 30px;
+      color: rgb(19, 27, 193);
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    #p {
+      font-weight: 600;
+    }
+
+    
+    footer {
+      padding: 50px 200px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .img-1{
+      align-items: center;
+      padding-left: 28%;
+
+    }
+
+
+
+
+    @media(max-width:1300px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      h3 {
+        font-size: 17px;
+      }
+    }
+
+
+
+    @media(max-width:1150px) {
+      h1 {
+        font-size: 35px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+
+      p, li, pre{
+        font-size:12px;
+      }
+
+      footer {
+      font-size: 15px;
+    }
+    }
+
+
+
+    @media(max-width:1000px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      h3 {
+        font-size: 13px;
+      }
+
+      ul {
+      margin-left: 30px;
+    }
+
+    li {
+      margin: 10px;
+    }
+    }
+
+
+
+    @media(max-width:850px) {
+      h1 {
+        font-size: 25px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      p, li, pre{
+        font-size:10px;
+      }
+
+      body {
+      margin: 20px;
+    }
+
+    footer {
+      font-size: 10px;
+    }
+    }
+
+
+
+    @media(max-width:700px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      ul {
+      margin-left: 20px;
+    }
+
+    li {
+      margin: 7px;
+    }
+
+    footer {
+      font-size: 8px;
+      padding: 40px 100px;
+    }
+    }
+
+
+    @media(max-width:500px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      p, li, pre{
+        font-size:10px;
+      }
+
+      ul {
+      margin-left: 10px;
+    }
+
+    li {
+      margin: 5px;
+    }
+
+    body {
+      margin: 10px;
+    }
+
+    footer {
+      font-size: 5px;
+      padding: 20px 100px;
+    }
+    }
+
+
+
+    @media(max-width:350px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+
+      p, li, pre{
+        font-size:10px;
+      }
+
+      ul {
+      margin-left: 10px;
+    }
+
+    li {
+      margin: 5px;
+    }
+
+    body {
+      margin-left: 10px;
+    }
+
+    footer {
+      font-size: 5px;
+      padding: 5px 60px;
+    }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1> Cascading style sheet</h1>
+  </header>
+  <main>
+    <section>
+      <h3>INTRODUCTION</h3>
+      <p>CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and
+        formatting of a document written in markup language. It provides an additional feature to HTML. It is generally
+        used with HTML to change the style of web pages and user interfaces.
+      </p>
+    </section>
+    <section>
+      <h3>Features of CSS</h3>
+      <ul>
+        <li>
+          <strong>Opportunity in Web designing: </strong>If anyone wants to begin a career in web designing
+          professionally, it is essential to have knowledge of CSS and HTML.
+        </li>
+        <li>
+          <strong>Website Design:</strong> With the use of CSS, we can control various styles, such as the text color,
+          the font style, the spacing among paragraphs, column size and layout, background color and images, design of
+          the layout, display variations for distinct screens and device sizes, and many other effects as well.
+        </li>
+        <li>
+          <strong>Web Control:</strong> CSS has controlling power on the documents of HTML, so it is easy to learn. It
+          is integrated with the HTML and the XHTML markup languages.
+        </li>
+        <li>
+          <strong>Other Languages:</strong> Once we have knowledge of some basics of CSS and HTML, other associated
+          technologies like Angular, PHP, and JavaScript are become clearer to understand.
+        </li>
+      </ul>
+      <h3>
+        CSS Applications
+      </h3>
+      <p id="p">
+        Some critical applications of CSS are discussed and listed below:
+      </p>
+      <ul>
+        <li><strong>Fast Page Loading:</strong> We don’t need to mention the attributes of the HTML element every time
+          if we use CSS. We need to specify one rule of CSS for an element and use it for every occurrence of that
+          element. So, short code means high-speed download times.</li>
+
+        <li><strong>Fast Page Loading:</strong> We don’t need to mention the attributes of the HTML element every time
+          if we use CSS. We need to specify one rule of CSS for an element and use it for every occurrence of that
+          element. So, short code means high-speed download times.
+        </li>
+        <li>
+          <strong>Easy Maintenance:</strong> To create a global alteration we need to alter the style. Every element will get automatically updated within all web pages.
+          <strong>Superior HTML Styles:</strong> HTML contains few extended attribute’s array than CSS, thus we can
+          provide a much better view to our HTML page as compared to HTML attributes.
+        </li>
+        <li>
+          <strong>Save Time:</strong> We can specify CSS once and reuse the same sheet within various HTML pages. We can
+          describe a style for every HTML tag and apply this style to as a lot of web pages as we want.
+        </li>
+        <li>
+          <strong>Compatibility:</strong> The cascading style sheet permits content to be upgraded for one or more
+          device types. Distinct versions of the website could be granted for various handheld devices like cell phones
+          and PDAs, and for printing.
+        </li>
+        <li>
+          <strong>Global Standards: </strong>Now, the attributes of HTML are being recommended to apply CSS, and they
+          are being deprecated. Thus it is better to begin the use of CSS in every HTML page for making them compatible
+          for future browsers.
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>
+        The CSS stylesheet file might look like this:
+      </h3>
+      <pre>
+
+    h1 {
+      color: blue;
+      background-color: yellow;
+      border: 1px solid black;
+    }
+    
+    p {
+      color: red;
+    }
+
+    </pre>
+    </section>
+    <section>
+      <h3> Inline styles</h3>
+      <p>
+        Inline styles are CSS declarations that affect a single HTML element, contained within a style attribute. The
+        implementation of an inline style in an HTML document might look like this:
+      </p>
+      <pre>
+< !DOCTYPE html>
+< html lang="en-GB">
+  < head>
+    < meta charset="utf-8" />
+    < title>My CSS experiment < /title>
+  < /head>
+  < body>
+    < h1 style="color: blue;background-color: yellow;border: 1px solid black;">
+      Hello World!
+    < /h1>
+    < p style="color:red;">This is my first CSS example< /p>
+  < /body>
+< /html>
+</pre>
+      <p>
+        Avoid using CSS in this way, when possible. It is the opposite of a best practice. First, it is the least
+        efficient implementation of CSS for maintenance. One styling change might require multiple edits within a single
+        web page. Second, inline CSS also mixes (CSS) presentational code with HTML and content, making everything more
+        difficult to read and understand. Separating code and content makes maintenance easier for all who work on the
+        website.
+      </p>
+      <div class="img-1">
+      <a href="https://www.geeksforgeeks.org/types-of-css-cascading-style-sheet/" target="_main">
+        <img src="C:\Users\Asus\Pictures\css1.png" alt="types of CSS" width="70%"></a>
+      </div>
+      <h3>Internal stylesheet</h3>
+      <p>
+        An internal stylesheet resides within an HTML document. To create an internal stylesheet, you place CSS inside a
+        < style> element contained inside the HTML < head>.
+
+            The HTML for an internal stylesheet might look like this:
+      </p>
+      <pre>
+< !DOCTYPE html>
+< html lang="en-GB">
+  < head>
+    < meta charset="utf-8" / >
+    < title>My CSS experiment< /title >
+    < style>
+      h1 {
+        color: blue;
+        background-color: yellow;
+        border: 1px solid black;
+      }
+
+      p {
+        color: red;
+      }
+    < /style >
+  < /head >
+  < body >
+    < h1>Hello World!< /h1 >
+    < p>This is my first CSS example< /p >
+  < /body >
+< /html >
+    </pre>
+      <p>
+        In some circumstances, internal stylesheets can be useful. For example, perhaps you're working with a content
+        management system where you are blocked from modifying external CSS files.
+
+        But for sites with more than one page, an internal stylesheet becomes a less efficient way of working. To apply
+        uniform CSS styling to multiple pages using internal stylesheets, you must have an internal stylesheet in every
+        web page that will use the styling. The efficiency penalty carries over to site maintenance too. With CSS in
+        internal stylesheets, there is the risk that even one simple styling change may require edits to multiple web
+        pages.
+      </p>
+      <h3>
+        External stylesheet
+      </h3>
+      <p>
+        An external stylesheet contains CSS in a separate file with a .css extension. This is the most common and useful
+        method of bringing CSS to a document. You can link a single CSS file to multiple web pages, styling all of them
+        with the same CSS stylesheet. In the Getting started with CSS, we linked an external stylesheet to our web
+        page.<br>
+        You reference an external CSS stylesheet from an HTML < link> element:
+      </p>
+      <pre>
+< !DOCTYPE html>
+< html lang="en-GB">
+  < head>
+    < meta charset="utf-8" />
+    < title>My CSS experiment< /title>
+    < link rel="stylesheet" href="styles.css" />
+  < /head>
+  < body>
+    < h1>Hello World!< /h1>
+    < p >This is my first CSS example< /p>
+  < /body>
+< /html>
+</pre>
+    </section>
+  </main>
+  <footer>
+    Contact us: ps9446133@gmail.com , nks854338@gmail.com
+  </footer>
+</body>
+
+</html>
